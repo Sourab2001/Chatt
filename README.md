@@ -1,3 +1,7 @@
+The Chating Application is a web app for social media. We can log in, register, view other users, send friend
+requests, upload photos or videos, and interact with posts by liking, commenting, and sharing. We can also
+upload and update our profile picture. This project creates using HTML CSS Bootstrap JavaScript technologies. Utilize Redux for state data management. Utilize multiple APIs for login, registration, password management, etc. Validation is also used in this project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
