@@ -1,0 +1,29 @@
+input,select,textarea{
+    border-radius: 10px ;
+    box-shadow: 0px 0px 7px lightgray;
+    transition: ease-in 0.3s;
+}
+input:focus,select:focus,textarea:focus{
+    transform: scale(1.05,1.05);
+    box-shadow: 5px 5px 7px lightgray;
+    transition: ease-out 0.3s;
+}
+.resivedMsg{
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+.sentMsg{
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+
+    margin-left: 50%;
+    width: 50%;
+    text-align: left;
+}
+.msg{
+    padding: 10px;
+    background-color: rgba(0, 174, 255, 0.55);
+    color: black;
+    border-radius: 6px;
+}

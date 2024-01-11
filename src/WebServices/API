@@ -1,0 +1,1858 @@
+1. User Registeration :  http://apps.codebetter.in:8082/chatbuddy/auth/save
+
+	Method : Post
+	Request Data : JSON 
+	Data : 
+	{
+	    "name" : "Vikas Patil" , "phone" : "7878787854" , 
+	    "email" : "vikas@gmail.com" , "password" : "12345", 
+	    "gender" : "male"
+	}
+
+
+Response : {
+    "status": true,
+    "data": {
+        "isactive": false,
+        "id": 102,
+        "name": "Akshay Mahajan",
+        "phone": "8907890098",
+        "email": "akki@gmail.com",
+        "password": "54321",
+        "gender": "male",
+        "otp": 111,
+        "updatedAt": "2023-06-02T09:54:32.001Z",
+        "createdAt": "2023-06-02T09:54:32.001Z"
+    },
+    "message": "User Saved !"
+}	
+	
+---------------------------------------------------------------------------------------------
+	
+	
+	
+2. User Login :  http://apps.codebetter.in:8082/chatbuddy/auth/login
+
+	Method : Post
+	Request Data  : JSON 
+	Data : 
+	{	   
+	    "email" : "vikas@gmail.com" , "password" : "12345"	   
+	}
+	
+Response : 
+  {
+    "status": true,
+    "data": {
+        "name": "Akshay Mahajan",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoxMDIsImlhdCI6MTY4NTY5OTc2OSwiZXhwIjoxNjg1NzAyNzY5fQ.bEPmjs5jzQ91CHRgvnLa8rWodZlsrWOjMi_uAMmZV4s"
+    },
+    "message": "Login Success !"
+}	
+
+---------------------------------------------------------------------------------------------	
+	
+3. User List :  http://apps.codebetter.in:8082/chatbuddy/api/user/list
+
+	Method : Get
+	Headers : JWT Token
+	Request Data  : No 
+	Data : No
+	
+	
+Response : 
+  {
+    "status": true,
+    "data": [
+        {
+            "id": 1,
+            "name": "Aakansha Daga Rathi",
+            "phone": "7856982354",
+            "email": "vikas@gmail.com",
+            "gender": "female",
+            "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/780f5696-0129-4122-a4da-ff457370f009.jpg",
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 2,
+            "name": "Anshu Daga",
+            "phone": "7856762354",
+            "email": "anshu@gmail.com",
+            "gender": "female",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 3,
+            "name": "Prateek Daga",
+            "phone": "6856762354",
+            "email": "prateek@gmail.com",
+            "gender": "male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 4,
+            "name": "savan pagare",
+            "phone": "9826998195",
+            "email": "savanpagare@gmail.com",
+            "gender": "male",
+            "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/84dcdee5-7fe2-41b4-b735-2c695bb7e8cf.jpg",
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 5,
+            "name": "Ashish Mishra",
+            "phone": "9988776655",
+            "email": "ashish@gmail.com",
+            "gender": "male",
+            "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/e2b60433-c80a-498f-9beb-d6754ff1a214.jpg",
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 6,
+            "name": "Koushal Kushwah",
+            "phone": "8349349820",
+            "email": "Koushal@gmail.com",
+            "gender": "male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 7,
+            "name": "kashish",
+            "phone": "1234567891",
+            "email": "matex.kashishmeliwal@gmail.com",
+            "gender": "Male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 9,
+            "name": "Vicky Koushal",
+            "phone": "8349349828",
+            "email": "vickykoushal@gmail.com",
+            "gender": "male",
+            "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 10,
+            "name": "Koushal Verma",
+            "phone": "9990009898",
+            "email": "koushal2@gmail.com",
+            "gender": "Male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 11,
+            "name": "raunakjashnani",
+            "phone": "1234567800",
+            "email": "rj@gmail.com",
+            "gender": "Male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 13,
+            "name": "Mishra",
+            "phone": "9988723445",
+            "email": "mishra@gmail.com",
+            "gender": "male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 14,
+            "name": "asd",
+            "phone": "1234567890",
+            "email": "asd@gmail.com",
+            "gender": "Female",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 17,
+            "name": "mishra",
+            "phone": "9977885566",
+            "email": "mishra1@gmail.com",
+            "gender": "Male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        },
+        {
+            "id": 101,
+            "name": "Osama Bin Laden",
+            "phone": "7321956324",
+            "email": "manonmission@gmail.com",
+            "gender": "male",
+            "image": null,
+            "isactive": false,
+            "otp": 111
+        }
+    ],
+    "message": "User List !"
+}
+
+---------------------------------------------------------------------------------------------------	
+	
+	
+4. User Update :  http://apps.codebetter.in:8082/chatbuddy/api/user/update
+
+	Method : Put
+	Headers : JWT Token
+	Request Data  : JSON
+	Data : 
+	{
+ 	   "name" : "Meena Sharma" , "phone" : "9787867599"
+	}
+	
+Response : 
+   {
+    "status": true,
+    "data": {
+        "name": "Akki",
+        "phone": "6789009875"
+    },
+    "message": "User Updated !"
+}
+
+----------------------------------------------------------------------	
+	
+5. User Change Password :  http://apps.codebetter.in:8082/chatbuddy/api/user/changepassword
+
+	Method : Put
+	Headers : JWT Token
+	Request Data  : JSON
+	Data : 
+	{
+ 	   "old_password" : "12345" , "new_password" : "54321"
+	}
+
+  Response : 
+  {
+    "status": true,
+    "data": null,
+    "message": "User Password Changed !"
+}
+ 
+
+---------------------------------------------------------------------------------------
+Self User Details : 
+
+6.  Login User Info :  http://apps.codebetter.in:8082/chatbuddy/api/user/me   
+
+    
+	Method : Get
+	Headers : JWT Token
+	
+	
+	Response :
+	  {
+    "status": true,
+    "data": {
+        "id": 102,
+        "name": "Akki",
+        "phone": "6789009875",
+        "email": "akki@gmail.com",
+        "gender": "male",
+        "image": null,
+        "isactive": false,
+        "otp": 111
+    },
+    "message": "User Detail !"
+}
+
+------------------------------------------------------------------
+	
+7. User Upload Pic :  http://apps.codebetter.in:8082/chatbuddy/api/user/uploadpic
+
+	Method : Put
+	Headers : JWT Token
+	Request Data  : Form Data
+	Data : image 
+	
+	
+	Response : 
+	  {
+        "status": true,
+        "data": null,
+        "message": "User Image Uploaded !"
+      }
+-------------------------------------------------------------------------------------	  
+	
+8. User Post Save :  http://apps.codebetter.in:8082/chatbuddy/api/post/save
+
+	Method : Post
+	Headers : JWT Token
+	
+	If No Media
+		Request Data  : JSON
+		Data : {
+			message : "alsdhlaksdlk"
+		}
+		
+	If Media File	
+		Request Data  : Form Data
+		Data : image , message
+		
+		
+Response : No Upload any media file : 
+    {
+    "status": true,
+    "data": {
+        "id": 42,
+        "user": 102,
+        "postdate": "2023-06-02T10:07:34.007Z",
+        "message": "Hello Students...",
+        "updatedAt": "2023-06-02T10:07:34.007Z",
+        "createdAt": "2023-06-02T10:07:34.007Z"
+    },
+    "message": "Post Saved !"
+}
+
+b. Upload Any Media File :  	
+
+ Response : {
+    "status": true,
+    "data": {
+        "id": 43,
+        "user": 102,
+        "postdate": "2023-06-02T10:09:04.996Z",
+        "message": "adkeufweilfhfilhweiofweiljeilejlcckldlc",
+        "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/e68ee95f-cd91-4bc8-92bb-2cb2af69bb4d.jpg",
+        "updatedAt": "2023-06-02T10:09:04.997Z",
+        "createdAt": "2023-06-02T10:09:04.997Z"
+    },
+    "message": "Post Saved !"
+}
+------------------------------------------------------------------------------------- 	
+		
+	
+9. Post List :  http://apps.codebetter.in:8082/chatbuddy/api/post/list
+
+	Method : Get
+	Headers : JWT Token
+	Request Data  : No
+	Data : No
+	
+	
+Response : 
+  {
+    "status": true,
+    "data": [
+        {
+            "id": 1,
+            "message": "Keep calm and take a trip to the desert.Sometimes you find yourself in the middle of nowhere. Sometimes, in the middle of nowhere, you find yourself. #Desert#Love#Rajasthan#StateOfLove#PlayWithSand#MakeYourCastle#FullOfHopeAndScope#LovelySilence#Sandunes",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/01d3eba5-8c80-433b-8f6f-4aa27ebdfa7b.jpg",
+            "postdate": "2023-04-18T05:15:25.000Z",
+            "postBy": {
+                "id": 1,
+                "name": "Aakansha Daga Rathi",
+                "phone": "7856982354",
+                "email": "vikas@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/780f5696-0129-4122-a4da-ff457370f009.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:43:29.000Z",
+                "updatedAt": "2023-04-18T05:04:50.000Z"
+            },
+            "comments": [
+                {
+                    "id": 2,
+                    "comment": "lovely :) <3",
+                    "cmtdate": "2023-04-18T05:32:35.000Z",
+                    "createdAt": "2023-04-18T05:32:35.000Z",
+                    "updatedAt": "2023-04-18T05:32:35.000Z",
+                    "sender": 2,
+                    "post": 1
+                },
+                {
+                    "id": 3,
+                    "comment": "Adorable",
+                    "cmtdate": "2023-04-18T06:53:15.000Z",
+                    "createdAt": "2023-04-18T06:53:15.000Z",
+                    "updatedAt": "2023-04-18T06:53:15.000Z",
+                    "sender": 4,
+                    "post": 1
+                },
+                {
+                    "id": 6,
+                    "comment": "Keep trying, You'll find yourself somewhere.",
+                    "cmtdate": "2023-04-18T09:24:09.000Z",
+                    "createdAt": "2023-04-18T09:24:09.000Z",
+                    "updatedAt": "2023-04-18T09:24:09.000Z",
+                    "sender": 5,
+                    "post": 1
+                },
+                {
+                    "id": 11,
+                    "comment": "hii",
+                    "cmtdate": "2023-04-19T18:39:38.000Z",
+                    "createdAt": "2023-04-19T18:39:38.000Z",
+                    "updatedAt": "2023-04-19T18:39:38.000Z",
+                    "sender": 11,
+                    "post": 1
+                },
+                {
+                    "id": 12,
+                    "comment": "/.",
+                    "cmtdate": "2023-04-25T11:46:49.000Z",
+                    "createdAt": "2023-04-25T11:46:49.000Z",
+                    "updatedAt": "2023-04-25T11:46:49.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 13,
+                    "comment": "uyt",
+                    "cmtdate": "2023-04-25T11:47:05.000Z",
+                    "createdAt": "2023-04-25T11:47:05.000Z",
+                    "updatedAt": "2023-04-25T11:47:05.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 16,
+                    "comment": "kk",
+                    "cmtdate": "2023-04-27T11:27:10.000Z",
+                    "createdAt": "2023-04-27T11:27:10.000Z",
+                    "updatedAt": "2023-04-27T11:27:10.000Z",
+                    "sender": 19,
+                    "post": 1
+                },
+                {
+                    "id": 17,
+                    "comment": "hhhh\n",
+                    "cmtdate": "2023-04-28T05:48:16.000Z",
+                    "createdAt": "2023-04-28T05:48:16.000Z",
+                    "updatedAt": "2023-04-28T05:48:16.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 18,
+                    "comment": "kl\n\n",
+                    "cmtdate": "2023-04-28T08:01:07.000Z",
+                    "createdAt": "2023-04-28T08:01:07.000Z",
+                    "updatedAt": "2023-04-28T08:01:07.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 19,
+                    "comment": "jkjbj",
+                    "cmtdate": "2023-04-28T10:06:07.000Z",
+                    "createdAt": "2023-04-28T10:06:07.000Z",
+                    "updatedAt": "2023-04-28T10:06:07.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 21,
+                    "comment": "hi",
+                    "cmtdate": "2023-05-03T07:44:08.000Z",
+                    "createdAt": "2023-05-03T07:44:08.000Z",
+                    "updatedAt": "2023-05-03T07:44:08.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 23,
+                    "comment": "happy moments",
+                    "cmtdate": "2023-05-05T18:37:27.000Z",
+                    "createdAt": "2023-05-05T18:37:27.000Z",
+                    "updatedAt": "2023-05-05T18:37:27.000Z",
+                    "sender": 72,
+                    "post": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "message": "We worry about what a child will become tomorrow, yet we forget that he is someone today.Children need models rather than critics. \n#Love#Friends#MakeFriends#PureAffection#InnocentKids",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/b935c0cc-2011-4960-9ba4-cab3e5581eba.jpg",
+            "postdate": "2023-04-18T05:21:39.000Z",
+            "postBy": {
+                "id": 1,
+                "name": "Aakansha Daga Rathi",
+                "phone": "7856982354",
+                "email": "vikas@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/780f5696-0129-4122-a4da-ff457370f009.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:43:29.000Z",
+                "updatedAt": "2023-04-18T05:04:50.000Z"
+            },
+            "comments": [
+                {
+                    "id": 1,
+                    "comment": "Beautiful it is :)",
+                    "cmtdate": "2023-04-18T05:32:02.000Z",
+                    "createdAt": "2023-04-18T05:32:02.000Z",
+                    "updatedAt": "2023-04-18T05:32:02.000Z",
+                    "sender": 2,
+                    "post": 2
+                },
+                {
+                    "id": 4,
+                    "comment": "wow,very nice",
+                    "cmtdate": "2023-04-18T06:54:01.000Z",
+                    "createdAt": "2023-04-18T06:54:01.000Z",
+                    "updatedAt": "2023-04-18T06:54:01.000Z",
+                    "sender": 4,
+                    "post": 2
+                },
+                {
+                    "id": 5,
+                    "comment": "Very True",
+                    "cmtdate": "2023-04-18T09:15:29.000Z",
+                    "createdAt": "2023-04-18T09:15:29.000Z",
+                    "updatedAt": "2023-04-18T09:15:29.000Z",
+                    "sender": 5,
+                    "post": 2
+                },
+                {
+                    "id": 14,
+                    "comment": "kkkkk",
+                    "cmtdate": "2023-04-25T11:47:29.000Z",
+                    "createdAt": "2023-04-25T11:47:29.000Z",
+                    "updatedAt": "2023-04-25T11:47:29.000Z",
+                    "sender": 27,
+                    "post": 2
+                },
+                {
+                    "id": 15,
+                    "comment": "kkkkk",
+                    "cmtdate": "2023-04-25T11:47:30.000Z",
+                    "createdAt": "2023-04-25T11:47:30.000Z",
+                    "updatedAt": "2023-04-25T11:47:30.000Z",
+                    "sender": 27,
+                    "post": 2
+                },
+                {
+                    "id": 20,
+                    "comment": "hi",
+                    "cmtdate": "2023-04-28T10:06:52.000Z",
+                    "createdAt": "2023-04-28T10:06:52.000Z",
+                    "updatedAt": "2023-04-28T10:06:52.000Z",
+                    "sender": 27,
+                    "post": 2
+                },
+                {
+                    "id": 24,
+                    "comment": "kids fill your home with full of happiness and joy",
+                    "cmtdate": "2023-05-11T09:29:55.000Z",
+                    "createdAt": "2023-05-11T09:29:55.000Z",
+                    "updatedAt": "2023-05-11T09:29:55.000Z",
+                    "sender": 72,
+                    "post": 2
+                },
+                {
+                    "id": 25,
+                    "comment": "childrens create home more beautiful",
+                    "cmtdate": "2023-05-16T08:55:22.000Z",
+                    "createdAt": "2023-05-16T08:55:22.000Z",
+                    "updatedAt": "2023-05-16T08:55:22.000Z",
+                    "sender": 72,
+                    "post": 2
+                },
+                {
+                    "id": 26,
+                    "comment": "awesome",
+                    "cmtdate": "2023-05-16T09:10:47.000Z",
+                    "createdAt": "2023-05-16T09:10:47.000Z",
+                    "updatedAt": "2023-05-16T09:10:47.000Z",
+                    "sender": 72,
+                    "post": 2
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "message": "It was a step well built by the queen-consort of Maharaja Abhaya Singh, a sign of the age-old tradition of the region where royal women .",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/70c0d138-1ea1-47e9-a816-a3f85f9deedd.jpg",
+            "postdate": "2023-04-18T05:28:38.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": [
+                {
+                    "id": 9,
+                    "comment": "Humara desh, humari viraasat.",
+                    "cmtdate": "2023-04-18T09:42:06.000Z",
+                    "createdAt": "2023-04-18T09:42:06.000Z",
+                    "updatedAt": "2023-04-18T09:42:06.000Z",
+                    "sender": 5,
+                    "post": 3
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "message": "dfdfdff",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/2f2ea934-6cc0-44f5-ba69-86baf4d47222.jpg",
+            "postdate": "2023-04-18T07:17:28.000Z",
+            "postBy": {
+                "id": 4,
+                "name": "savan pagare",
+                "phone": "9826998195",
+                "email": "savanpagare@gmail.com",
+                "password": "1122334455",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/84dcdee5-7fe2-41b4-b735-2c695bb7e8cf.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T06:34:11.000Z",
+                "updatedAt": "2023-04-18T06:40:01.000Z"
+            },
+            "comments": [
+                {
+                    "id": 7,
+                    "comment": "Jai Shree Ram",
+                    "cmtdate": "2023-04-18T09:26:00.000Z",
+                    "createdAt": "2023-04-18T09:26:00.000Z",
+                    "updatedAt": "2023-04-18T09:26:00.000Z",
+                    "sender": 5,
+                    "post": 4
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "message": "Or veer bajarangi ne apna seena chir dia or bole le dekh....JAI SHREE RAM !",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/91414f95-570a-46e7-80aa-66681d56a0f3.jpg",
+            "postdate": "2023-04-18T07:18:40.000Z",
+            "postBy": {
+                "id": 4,
+                "name": "savan pagare",
+                "phone": "9826998195",
+                "email": "savanpagare@gmail.com",
+                "password": "1122334455",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/84dcdee5-7fe2-41b4-b735-2c695bb7e8cf.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T06:34:11.000Z",
+                "updatedAt": "2023-04-18T06:40:01.000Z"
+            },
+            "comments": [
+                {
+                    "id": 8,
+                    "comment": "First line of bhajan, nice one.",
+                    "cmtdate": "2023-04-18T09:36:44.000Z",
+                    "createdAt": "2023-04-18T09:36:44.000Z",
+                    "updatedAt": "2023-04-18T09:36:44.000Z",
+                    "sender": 5,
+                    "post": 5
+                },
+                {
+                    "id": 22,
+                    "comment": "Osm",
+                    "cmtdate": "2023-05-03T16:51:43.000Z",
+                    "createdAt": "2023-05-03T16:51:43.000Z",
+                    "updatedAt": "2023-05-03T16:51:43.000Z",
+                    "sender": 72,
+                    "post": 5
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "message": "rama rama aanand ramanam, acchutam,keshav hari naranyam...",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/eecd1443-6c45-4c58-b3c6-d7b8a0d553d7.jpg",
+            "postdate": "2023-04-18T07:22:23.000Z",
+            "postBy": {
+                "id": 4,
+                "name": "savan pagare",
+                "phone": "9826998195",
+                "email": "savanpagare@gmail.com",
+                "password": "1122334455",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/84dcdee5-7fe2-41b4-b735-2c695bb7e8cf.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T06:34:11.000Z",
+                "updatedAt": "2023-04-18T06:40:01.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 7,
+            "message": "Relation between Frontend , Backend and API",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/5e82f465-bd5c-469e-9518-6e8e8a115a43.jpg",
+            "postdate": "2023-04-18T09:06:53.000Z",
+            "postBy": {
+                "id": 5,
+                "name": "Ashish Mishra",
+                "phone": "9988776655",
+                "email": "ashish@gmail.com",
+                "password": "98765",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/e2b60433-c80a-498f-9beb-d6754ff1a214.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T08:36:18.000Z",
+                "updatedAt": "2023-04-18T08:43:05.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 8,
+            "message": "Education is the most powerful weapon which you can use to change the world.",
+            "postfile": null,
+            "postdate": "2023-04-18T09:40:00.000Z",
+            "postBy": {
+                "id": 9,
+                "name": "Vicky Koushal",
+                "phone": "8349349828",
+                "email": "vickykoushal@gmail.com",
+                "password": "12345",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T09:23:00.000Z",
+                "updatedAt": "2023-04-18T09:31:32.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 9,
+            "message": "my message with image",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/0fac045b-ae7a-494f-bc08-8c80d7349a9e.jpg",
+            "postdate": "2023-04-18T09:43:00.000Z",
+            "postBy": {
+                "id": 9,
+                "name": "Vicky Koushal",
+                "phone": "8349349828",
+                "email": "vickykoushal@gmail.com",
+                "password": "12345",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T09:23:00.000Z",
+                "updatedAt": "2023-04-18T09:31:32.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 10,
+            "message": "my message with imageThere is always light. If only we're brave enough to see it. If only we're brave enough to be it.",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/12a1a8ed-7180-4cf6-bbd2-32bfb98f5595.jpg",
+            "postdate": "2023-04-18T09:50:57.000Z",
+            "postBy": {
+                "id": 9,
+                "name": "Vicky Koushal",
+                "phone": "8349349828",
+                "email": "vickykoushal@gmail.com",
+                "password": "12345",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T09:23:00.000Z",
+                "updatedAt": "2023-04-18T09:31:32.000Z"
+            },
+            "comments": [
+                {
+                    "id": 10,
+                    "comment": "Please make me understand those words Vikky bhai",
+                    "cmtdate": "2023-04-18T09:55:56.000Z",
+                    "createdAt": "2023-04-18T09:55:56.000Z",
+                    "updatedAt": "2023-04-18T09:55:56.000Z",
+                    "sender": 5,
+                    "post": 10
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "message": "Be the champion, not by chance but by efforts put by you.",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/1baece64-b95a-4f0d-900d-33815ae279aa.jpg",
+            "postdate": "2023-04-18T09:53:18.000Z",
+            "postBy": {
+                "id": 5,
+                "name": "Ashish Mishra",
+                "phone": "9988776655",
+                "email": "ashish@gmail.com",
+                "password": "98765",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/e2b60433-c80a-498f-9beb-d6754ff1a214.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T08:36:18.000Z",
+                "updatedAt": "2023-04-18T08:43:05.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 12,
+            "message": "Clicked by \"Koushal\"",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/7e8745ae-89af-4b11-b896-43ab20e1558d.jpg",
+            "postdate": "2023-04-18T09:53:52.000Z",
+            "postBy": {
+                "id": 9,
+                "name": "Vicky Koushal",
+                "phone": "8349349828",
+                "email": "vickykoushal@gmail.com",
+                "password": "12345",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T09:23:00.000Z",
+                "updatedAt": "2023-04-18T09:31:32.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 13,
+            "message": "Clicked by \"Koushal\"",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/973e2c2a-6781-485f-8b04-7acc4d646cb5.jpg",
+            "postdate": "2023-04-18T09:54:08.000Z",
+            "postBy": {
+                "id": 9,
+                "name": "Vicky Koushal",
+                "phone": "8349349828",
+                "email": "vickykoushal@gmail.com",
+                "password": "12345",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T09:23:00.000Z",
+                "updatedAt": "2023-04-18T09:31:32.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 14,
+            "message": "Juhu beach Clicked by \"Koushal\"",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/bdd1037a-9c80-49ee-b5c7-94812dae8f57.jpg",
+            "postdate": "2023-04-18T09:56:21.000Z",
+            "postBy": {
+                "id": 9,
+                "name": "Vicky Koushal",
+                "phone": "8349349828",
+                "email": "vickykoushal@gmail.com",
+                "password": "12345",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T09:23:00.000Z",
+                "updatedAt": "2023-04-18T09:31:32.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 15,
+            "message": "Geeta Gyaan",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/bc85e688-2e86-4b79-8225-f87adf060b5b.jpg",
+            "postdate": "2023-04-18T09:58:10.000Z",
+            "postBy": {
+                "id": 9,
+                "name": "Vicky Koushal",
+                "phone": "8349349828",
+                "email": "vickykoushal@gmail.com",
+                "password": "12345",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/5bb96e02-cf1e-4190-816d-29b7023dc578.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T09:23:00.000Z",
+                "updatedAt": "2023-04-18T09:31:32.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 16,
+            "message": "\"Best group formed not by good person but by good hearts\" ",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/1668e308-3c8c-4747-8ccc-bbca592f2373.jpg",
+            "postdate": "2023-04-18T09:58:30.000Z",
+            "postBy": {
+                "id": 5,
+                "name": "Ashish Mishra",
+                "phone": "9988776655",
+                "email": "ashish@gmail.com",
+                "password": "98765",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/e2b60433-c80a-498f-9beb-d6754ff1a214.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T08:36:18.000Z",
+                "updatedAt": "2023-04-18T08:43:05.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 17,
+            "message": "Hello students, good morning.....",
+            "postfile": null,
+            "postdate": "2023-04-18T11:26:02.000Z",
+            "postBy": {
+                "id": 10,
+                "name": "Koushal Verma",
+                "phone": "9990009898",
+                "email": "koushal2@gmail.com",
+                "password": "12345",
+                "gender": "Male",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T11:01:41.000Z",
+                "updatedAt": "2023-04-18T11:01:41.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 18,
+            "message": "Good Night Everyone !",
+            "postfile": null,
+            "postdate": "2023-04-18T11:29:27.000Z",
+            "postBy": {
+                "id": 10,
+                "name": "Koushal Verma",
+                "phone": "9990009898",
+                "email": "koushal2@gmail.com",
+                "password": "12345",
+                "gender": "Male",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T11:01:41.000Z",
+                "updatedAt": "2023-04-18T11:01:41.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 19,
+            "message": "Happy Holi !",
+            "postfile": null,
+            "postdate": "2023-04-18T11:37:10.000Z",
+            "postBy": {
+                "id": 10,
+                "name": "Koushal Verma",
+                "phone": "9990009898",
+                "email": "koushal2@gmail.com",
+                "password": "12345",
+                "gender": "Male",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T11:01:41.000Z",
+                "updatedAt": "2023-04-18T11:01:41.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 20,
+            "message": "Happy Diwali !",
+            "postfile": null,
+            "postdate": "2023-04-18T11:37:46.000Z",
+            "postBy": {
+                "id": 10,
+                "name": "Koushal Verma",
+                "phone": "9990009898",
+                "email": "koushal2@gmail.com",
+                "password": "12345",
+                "gender": "Male",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T11:01:41.000Z",
+                "updatedAt": "2023-04-18T11:01:41.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 21,
+            "message": "Happy Rakhi !",
+            "postfile": null,
+            "postdate": "2023-04-18T11:38:17.000Z",
+            "postBy": {
+                "id": 10,
+                "name": "Koushal Verma",
+                "phone": "9990009898",
+                "email": "koushal2@gmail.com",
+                "password": "12345",
+                "gender": "Male",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T11:01:41.000Z",
+                "updatedAt": "2023-04-18T11:01:41.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 22,
+            "message": "Happy X-Mas",
+            "postfile": null,
+            "postdate": "2023-04-18T11:40:03.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 23,
+            "message": "asdasd",
+            "postfile": null,
+            "postdate": "2023-04-18T11:48:01.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 24,
+            "message": "fgfdfgdf",
+            "postfile": null,
+            "postdate": "2023-04-18T11:48:10.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 25,
+            "message": "xcvcxcv",
+            "postfile": null,
+            "postdate": "2023-04-18T11:48:41.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 26,
+            "message": "efrwer",
+            "postfile": null,
+            "postdate": "2023-04-18T11:48:46.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 27,
+            "message": "asdasd",
+            "postfile": null,
+            "postdate": "2023-04-18T11:49:43.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 28,
+            "message": "asdasd",
+            "postfile": null,
+            "postdate": "2023-04-18T11:50:25.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 29,
+            "message": "asdasd",
+            "postfile": null,
+            "postdate": "2023-04-18T11:51:09.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 30,
+            "message": "6512",
+            "postfile": null,
+            "postdate": "2023-04-21T05:53:47.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 31,
+            "message": "hari om",
+            "postfile": null,
+            "postdate": "2023-04-21T05:54:02.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 32,
+            "message": "hume is bat ka gam tha - vo humse naraj bethe the....\nye dekh sare gam humse naraj bethe the...",
+            "postfile": null,
+            "postdate": "2023-04-21T06:13:25.000Z",
+            "postBy": {
+                "id": 4,
+                "name": "savan pagare",
+                "phone": "9826998195",
+                "email": "savanpagare@gmail.com",
+                "password": "1122334455",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/84dcdee5-7fe2-41b4-b735-2c695bb7e8cf.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T06:34:11.000Z",
+                "updatedAt": "2023-04-18T06:40:01.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 33,
+            "message": "hiii",
+            "postfile": null,
+            "postdate": "2023-04-25T12:14:03.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 34,
+            "message": "hhh",
+            "postfile": null,
+            "postdate": "2023-04-25T12:23:35.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 35,
+            "message": "A",
+            "postfile": null,
+            "postdate": "2023-05-15T11:30:47.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 36,
+            "message": "jokkpk.,",
+            "postfile": null,
+            "postdate": "2023-05-16T13:53:42.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 37,
+            "message": "my name is shivanshi\n\n\n",
+            "postfile": null,
+            "postdate": "2023-05-16T13:54:03.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 38,
+            "message": "hello everyone",
+            "postfile": null,
+            "postdate": "2023-05-18T03:30:16.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 39,
+            "message": "taj mahal the very beautiful",
+            "postfile": null,
+            "postdate": "2023-05-23T18:52:43.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 40,
+            "message": "taj mahal the very beautiful",
+            "postfile": null,
+            "postdate": "2023-05-23T18:52:43.000Z",
+            "postBy": {
+                "id": 2,
+                "name": "Anshu Daga",
+                "phone": "7856762354",
+                "email": "anshu@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": null,
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:44:10.000Z",
+                "updatedAt": "2023-04-18T04:44:10.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 41,
+            "message": "Hello Freinds",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/6bf40081-7058-47e6-b5e7-f227870b8db2.jpg",
+            "postdate": "2023-05-26T06:51:32.000Z",
+            "postBy": {
+                "id": 90,
+                "name": "Demo User ",
+                "phone": "7894561235",
+                "email": "User@gmail.com",
+                "password": "12345",
+                "gender": "Male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/d9226fed-77e5-4916-ad5c-c7cccde9590f.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-05-26T06:49:18.000Z",
+                "updatedAt": "2023-05-26T06:50:19.000Z"
+            },
+            "comments": [
+                {
+                    "id": 27,
+                    "comment": "comment",
+                    "cmtdate": "2023-05-26T06:52:43.000Z",
+                    "createdAt": "2023-05-26T06:52:43.000Z",
+                    "updatedAt": "2023-05-26T06:52:43.000Z",
+                    "sender": 90,
+                    "post": 41
+                }
+            ]
+        },
+        {
+            "id": 42,
+            "message": "Hello Students...",
+            "postfile": null,
+            "postdate": "2023-06-02T10:07:34.000Z",
+            "postBy": {
+                "id": 102,
+                "name": "Akki",
+                "phone": "6789009875",
+                "email": "akki@gmail.com",
+                "password": "54321",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/82abb4ec-bd78-41b6-9fd1-dfd61ec92103.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-06-02T09:54:32.000Z",
+                "updatedAt": "2023-06-02T10:04:23.000Z"
+            },
+            "comments": []
+        },
+        {
+            "id": 43,
+            "message": "adkeufweilfhfilhweiofweiljeilejlcckldlc",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/e68ee95f-cd91-4bc8-92bb-2cb2af69bb4d.jpg",
+            "postdate": "2023-06-02T10:09:04.000Z",
+            "postBy": {
+                "id": 102,
+                "name": "Akki",
+                "phone": "6789009875",
+                "email": "akki@gmail.com",
+                "password": "54321",
+                "gender": "male",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/82abb4ec-bd78-41b6-9fd1-dfd61ec92103.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-06-02T09:54:32.000Z",
+                "updatedAt": "2023-06-02T10:04:23.000Z"
+            },
+            "comments": []
+        }
+    ],
+    "message": "User Post List !"
+}
+--------------------------------------------------------------------------------------------------------------------------------	
+
+	
+10. Specific User Post List :  http://apps.codebetter.in:8082/chatbuddy/api/post/userpost/1
+
+	Method : Get
+	Headers : JWT Token
+	Request Data  : No
+	Data : No
+	
+	
+Response : {
+    "status": true,
+    "data": [
+        {
+            "id": 1,
+            "message": "Keep calm and take a trip to the desert.Sometimes you find yourself in the middle of nowhere. Sometimes, in the middle of nowhere, you find yourself. #Desert#Love#Rajasthan#StateOfLove#PlayWithSand#MakeYourCastle#FullOfHopeAndScope#LovelySilence#Sandunes",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/01d3eba5-8c80-433b-8f6f-4aa27ebdfa7b.jpg",
+            "postdate": "2023-04-18T05:15:25.000Z",
+            "postBy": {
+                "id": 1,
+                "name": "Aakansha Daga Rathi",
+                "phone": "7856982354",
+                "email": "vikas@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/780f5696-0129-4122-a4da-ff457370f009.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:43:29.000Z",
+                "updatedAt": "2023-04-18T05:04:50.000Z"
+            },
+            "comments": [
+                {
+                    "id": 2,
+                    "comment": "lovely :) <3",
+                    "cmtdate": "2023-04-18T05:32:35.000Z",
+                    "createdAt": "2023-04-18T05:32:35.000Z",
+                    "updatedAt": "2023-04-18T05:32:35.000Z",
+                    "sender": 2,
+                    "post": 1
+                },
+                {
+                    "id": 3,
+                    "comment": "Adorable",
+                    "cmtdate": "2023-04-18T06:53:15.000Z",
+                    "createdAt": "2023-04-18T06:53:15.000Z",
+                    "updatedAt": "2023-04-18T06:53:15.000Z",
+                    "sender": 4,
+                    "post": 1
+                },
+                {
+                    "id": 6,
+                    "comment": "Keep trying, You'll find yourself somewhere.",
+                    "cmtdate": "2023-04-18T09:24:09.000Z",
+                    "createdAt": "2023-04-18T09:24:09.000Z",
+                    "updatedAt": "2023-04-18T09:24:09.000Z",
+                    "sender": 5,
+                    "post": 1
+                },
+                {
+                    "id": 11,
+                    "comment": "hii",
+                    "cmtdate": "2023-04-19T18:39:38.000Z",
+                    "createdAt": "2023-04-19T18:39:38.000Z",
+                    "updatedAt": "2023-04-19T18:39:38.000Z",
+                    "sender": 11,
+                    "post": 1
+                },
+                {
+                    "id": 12,
+                    "comment": "/.",
+                    "cmtdate": "2023-04-25T11:46:49.000Z",
+                    "createdAt": "2023-04-25T11:46:49.000Z",
+                    "updatedAt": "2023-04-25T11:46:49.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 13,
+                    "comment": "uyt",
+                    "cmtdate": "2023-04-25T11:47:05.000Z",
+                    "createdAt": "2023-04-25T11:47:05.000Z",
+                    "updatedAt": "2023-04-25T11:47:05.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 16,
+                    "comment": "kk",
+                    "cmtdate": "2023-04-27T11:27:10.000Z",
+                    "createdAt": "2023-04-27T11:27:10.000Z",
+                    "updatedAt": "2023-04-27T11:27:10.000Z",
+                    "sender": 19,
+                    "post": 1
+                },
+                {
+                    "id": 17,
+                    "comment": "hhhh\n",
+                    "cmtdate": "2023-04-28T05:48:16.000Z",
+                    "createdAt": "2023-04-28T05:48:16.000Z",
+                    "updatedAt": "2023-04-28T05:48:16.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 18,
+                    "comment": "kl\n\n",
+                    "cmtdate": "2023-04-28T08:01:07.000Z",
+                    "createdAt": "2023-04-28T08:01:07.000Z",
+                    "updatedAt": "2023-04-28T08:01:07.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 19,
+                    "comment": "jkjbj",
+                    "cmtdate": "2023-04-28T10:06:07.000Z",
+                    "createdAt": "2023-04-28T10:06:07.000Z",
+                    "updatedAt": "2023-04-28T10:06:07.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 21,
+                    "comment": "hi",
+                    "cmtdate": "2023-05-03T07:44:08.000Z",
+                    "createdAt": "2023-05-03T07:44:08.000Z",
+                    "updatedAt": "2023-05-03T07:44:08.000Z",
+                    "sender": 27,
+                    "post": 1
+                },
+                {
+                    "id": 23,
+                    "comment": "happy moments",
+                    "cmtdate": "2023-05-05T18:37:27.000Z",
+                    "createdAt": "2023-05-05T18:37:27.000Z",
+                    "updatedAt": "2023-05-05T18:37:27.000Z",
+                    "sender": 72,
+                    "post": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "message": "We worry about what a child will become tomorrow, yet we forget that he is someone today.Children need models rather than critics. \n#Love#Friends#MakeFriends#PureAffection#InnocentKids",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/b935c0cc-2011-4960-9ba4-cab3e5581eba.jpg",
+            "postdate": "2023-04-18T05:21:39.000Z",
+            "postBy": {
+                "id": 1,
+                "name": "Aakansha Daga Rathi",
+                "phone": "7856982354",
+                "email": "vikas@gmail.com",
+                "password": "12345",
+                "gender": "female",
+                "image": "http://apps.skilledfresher.in:8082/chatbuddy/users/780f5696-0129-4122-a4da-ff457370f009.jpg",
+                "isactive": false,
+                "otp": 111,
+                "createdAt": "2023-04-18T04:43:29.000Z",
+                "updatedAt": "2023-04-18T05:04:50.000Z"
+            },
+            "comments": [
+                {
+                    "id": 1,
+                    "comment": "Beautiful it is :)",
+                    "cmtdate": "2023-04-18T05:32:02.000Z",
+                    "createdAt": "2023-04-18T05:32:02.000Z",
+                    "updatedAt": "2023-04-18T05:32:02.000Z",
+                    "sender": 2,
+                    "post": 2
+                },
+                {
+                    "id": 4,
+                    "comment": "wow,very nice",
+                    "cmtdate": "2023-04-18T06:54:01.000Z",
+                    "createdAt": "2023-04-18T06:54:01.000Z",
+                    "updatedAt": "2023-04-18T06:54:01.000Z",
+                    "sender": 4,
+                    "post": 2
+                },
+                {
+                    "id": 5,
+                    "comment": "Very True",
+                    "cmtdate": "2023-04-18T09:15:29.000Z",
+                    "createdAt": "2023-04-18T09:15:29.000Z",
+                    "updatedAt": "2023-04-18T09:15:29.000Z",
+                    "sender": 5,
+                    "post": 2
+                },
+                {
+                    "id": 14,
+                    "comment": "kkkkk",
+                    "cmtdate": "2023-04-25T11:47:29.000Z",
+                    "createdAt": "2023-04-25T11:47:29.000Z",
+                    "updatedAt": "2023-04-25T11:47:29.000Z",
+                    "sender": 27,
+                    "post": 2
+                },
+                {
+                    "id": 15,
+                    "comment": "kkkkk",
+                    "cmtdate": "2023-04-25T11:47:30.000Z",
+                    "createdAt": "2023-04-25T11:47:30.000Z",
+                    "updatedAt": "2023-04-25T11:47:30.000Z",
+                    "sender": 27,
+                    "post": 2
+                },
+                {
+                    "id": 20,
+                    "comment": "hi",
+                    "cmtdate": "2023-04-28T10:06:52.000Z",
+                    "createdAt": "2023-04-28T10:06:52.000Z",
+                    "updatedAt": "2023-04-28T10:06:52.000Z",
+                    "sender": 27,
+                    "post": 2
+                },
+                {
+                    "id": 24,
+                    "comment": "kids fill your home with full of happiness and joy",
+                    "cmtdate": "2023-05-11T09:29:55.000Z",
+                    "createdAt": "2023-05-11T09:29:55.000Z",
+                    "updatedAt": "2023-05-11T09:29:55.000Z",
+                    "sender": 72,
+                    "post": 2
+                },
+                {
+                    "id": 25,
+                    "comment": "childrens create home more beautiful",
+                    "cmtdate": "2023-05-16T08:55:22.000Z",
+                    "createdAt": "2023-05-16T08:55:22.000Z",
+                    "updatedAt": "2023-05-16T08:55:22.000Z",
+                    "sender": 72,
+                    "post": 2
+                },
+                {
+                    "id": 26,
+                    "comment": "awesome",
+                    "cmtdate": "2023-05-16T09:10:47.000Z",
+                    "createdAt": "2023-05-16T09:10:47.000Z",
+                    "updatedAt": "2023-05-16T09:10:47.000Z",
+                    "sender": 72,
+                    "post": 2
+                }
+            ]
+        }
+    ],
+    "message": "User Post List !"
+}
+-------------------------------------------------------------------------------------------------------	
+	
+	
+11. Login User Post List :  http://apps.codebetter.in:8082/chatbuddy/api/post/mypost
+
+	Method : Get
+	Headers : JWT Token
+	Request Data  : No
+	Data : No
+	
+	
+	Response : 
+	{
+    "status": true,
+    "data": [
+        {
+            "id": 42,
+            "message": "Hello Students...",
+            "postfile": null,
+            "postdate": "2023-06-02T10:07:34.000Z",
+            "comments": []
+        },
+        {
+            "id": 43,
+            "message": "adkeufweilfhfilhweiofweiljeilejlcckldlc",
+            "postfile": "http://apps.skilledfresher.in:8082/chatbuddy/posts/e68ee95f-cd91-4bc8-92bb-2cb2af69bb4d.jpg",
+            "postdate": "2023-06-02T10:09:04.000Z",
+            "comments": []
+        }
+    ],
+    "message": "User Post List !"
+}
+----------------------------------------------------------------------------------------------------------------------------------	
+	
+12. Comment Save :  http://apps.codebetter.in:8082/chatbuddy/api/comment/save
+
+	Method : Post
+	Headers : JWT Token
+	Request Data  : JSON
+	Data : 
+	{
+ 	   "comment" : "good" , "post": 2
+	}
+
+  Response : 
+  {
+    "status": true,
+    "data": {
+        "id": 28,
+        "sender": 102,
+        "cmtdate": "2023-06-02T10:15:47.077Z",
+        "comment": "Better",
+        "post": 2,
+        "updatedAt": "2023-06-02T10:15:47.077Z",
+        "createdAt": "2023-06-02T10:15:47.077Z"
+    },
+    "message": "Comment Saved !"
+}
+
+-----------------------------------------------------------------------------------------------------
+13. Message Send :  http://apps.codebetter.in:8082/chatbuddy/api/user/msg/send
+
+	Method : Post
+	Headers : JWT Token
+	Request Data  : JSON
+	Data : 
+	{
+	"receiverId" : 12, "msg" : "Bye"
+	}
+	
+Response : 
+{
+    "status": true,
+    "data": {
+        "sender": 102,
+        "receiver": 1,
+        "msg": "Hello....",
+        "msgdate": "2023-06-02T10:17:15.734Z",
+        "_id": "6479c1ab66bf1e002a709196",
+        "__v": 0
+    },
+    "message": "Message Sent !"
+}
+-------------------------------------------------------------------------------------------------	
+
+14. Specific User Message :  http://apps.codebetter.in:8082/chatbuddy/api/user/msg/get/2
+
+	Method : Get
+	Headers : JWT Token
+	Request Data  : No
+	Data : No
+
+
+Response : {
+    "status": true,
+    "data": [
+        {
+            "_id": "63b033f5bec82de9befdc346",
+            "sender": 3,
+            "receiver": 1,
+            "msg": "Hii",
+            "msgdate": "2022-12-31T13:07:01.884Z",
+            "__v": 0
+        },
+        {
+            "_id": "63b0343ebec82de9befdc349",
+            "sender": 3,
+            "receiver": 1,
+            "msg": "Hello",
+            "msgdate": "2022-12-31T13:08:14.964Z",
+            "__v": 0
+        },
+        {
+            "_id": "63b03680bec82de9befdc352",
+            "sender": 23,
+            "receiver": 1,
+            "msg": "Hello",
+            "msgdate": "2022-12-31T13:17:52.439Z",
+            "__v": 0
+        },
+        {
+            "_id": "63ed1267dc0afe9e9499d73a",
+            "sender": 8,
+            "receiver": 1,
+            "msg": "SMS Test 01",
+            "msgdate": "2023-02-15T17:12:07.633Z",
+            "__v": 0
+        },
+        {
+            "_id": "6479c1ab66bf1e002a709196",
+            "sender": 102,
+            "receiver": 1,
+            "msg": "Hello....",
+            "msgdate": "2023-06-02T10:17:15.734Z",
+            "__v": 0
+        }
+    ],
+    "message": "Messages !"
+}
+----------------------------------------------------------------------------------------------
